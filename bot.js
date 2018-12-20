@@ -16,13 +16,13 @@ const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
 
 const GOOGLE_API_KEY = 'AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8';
 const youtube = new YouTube(GOOGLE_API_KEY);
-const PREFIX = '#';
+const PREFIX = '&';
 
 const queue = new Map();
 const client = new Discord.Client({disableEveryone: true}); 
 
 
-var prefix = "#"
+var prefix = "&"
 client.on('message', message => {
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
@@ -62,7 +62,7 @@ client.on('message', message => {
 }
 });
 
-var prefix = "#"
+var prefix = "&"
 client.on('message', message => {
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
@@ -103,7 +103,7 @@ client.on('message', message => {
 });
 
 client.on("message", message => {
-    var prefix = "#";
+    var prefix = "&";
  
             var args = message.content.substring(prefix.length).split(" ");
             if (message.content.startsWith(prefix + "clear")) {
@@ -126,7 +126,7 @@ client.on("message", message => {
 })
 
 client.on('message', async message =>{
-  var prefix = "'#";
+  var prefix = "'&";
 const ms = require("ms");
 if (message.author.omar) return;
 if (!message.content.startsWith(prefix)) return;
@@ -248,41 +248,41 @@ client.on('message', message => {
 
  message.author.sendMessage(`
  **
-__~~ Eight System ~~__ By: ! 'Sr , AÕ .#0001
+__~~ Versus System ~~__ By: » FT  , Bõ#0001
 
 ╔[❖════════════❖]╗
-             Prefix = ' # '
+             Prefix = ' & '
 ╚[❖════════════❖]╝
 
 ╔[❖════════════❖]╗
         Admin Commands
 ╚[❖════════════❖]╝
 
-❖ #kick <mention> ➾ طرد شخص من السيرفر
+❖ &kick <mention> ➾ طرد شخص من السيرفر
 
-❖ #ban <mention> ➾ باند لي الشخص
+❖ &ban <mention> ➾ باند لي الشخص
 
-❖ #clear ➾ مسح الشات
+❖ &clear ➾ مسح الشات
 
-❖ #mute <mention> ➾ اعطاء ميوت لي الشخص
+❖ &mute <mention> ➾ اعطاء ميوت لي الشخص
 
-❖ #unmute <mention> ➾ فك الميوت عن الشخص
+❖ &unmute <mention> ➾ فك الميوت عن الشخص
 
-❖ #bc <message> ➾ لأرسال رسالة لجميع الأعضاء على الخاص
+❖ &bc <message> ➾ لأرسال رسالة لجميع الأعضاء على الخاص
 
 ╔[❖════════════❖]╗
          General  Commands
 ╚[❖════════════❖]╝
 
-❖ #member ➾ لمعرفة الأعضاء الموجودة في السيرفر
+❖ &member ➾ لمعرفة الأعضاء الموجودة في السيرفر
 
-❖ #id ➾ معرفة الايدي
+❖ &id ➾ معرفة الايدي
 
-❖ #ping ➾ لروئية بينق البوت
+❖ &ping ➾ لروئية بينق البوت
 
-❖ #bot ➾ معلومات عن البوت
+❖ &bot ➾ معلومات عن البوت
 
-❖ #server ➾ معلومات السيرفر 
+❖ &server ➾ معلومات السيرفر 
 
 ╔[❖════════════❖]╗
          Music  Commands
@@ -293,19 +293,19 @@ __~~ Eight System ~~__ By: ! 'Sr , AÕ .#0001
              Prefix = ' - '
 ╚[❖════════════❖]╝
 
-❖-p  『تشغيل الاغاني』
+❖&p  『تشغيل الاغاني』
 
-❖-sk 『تخطي الاغاني』
+❖&sk 『تخطي الاغاني』
 
-❖-st  『إيقاف الاغاني』
+❖&st  『إيقاف الاغاني』
 
-❖-vol  『تحكم في درجة الصوت』
+❖&vol  『تحكم في درجة الصوت』
 
-❖-que『قائمة الانتظار من الأغاني』
+❖&que『قائمة الانتظار من الأغاني』
 
-❖-pau  『أيقاف الاغاني』
+❖&pau  『أيقاف الاغاني』
 
-❖-res  『تشغيل الاغاني』
+❖&res  『تشغيل الاغاني』
 
 ==================================================================
 
@@ -317,7 +317,7 @@ __~~ Eight System ~~__ By: ! 'Sr , AÕ .#0001
 });
 
 client.on("message", msg => {
-    var prefix = "#";
+    var prefix = "&";
 if(msg.content.startsWith (prefix + "id")) {
 if(!msg.channel.guild) return msg.reply('**❌ اسف لكن هذا الامر للسيرفرات فقط **');         
 const embed = new Discord.RichEmbed();
@@ -337,7 +337,7 @@ msg.channel.send({embed: embed})
 });
 
 client.on('message', message => {
-                 var prefix = "-"
+                 var prefix = "&"
            if (message.content.startsWith(prefix + "id")) {
      var args = message.content.split(" ").slice(1);
      let user = message.mentions.users.first();
@@ -389,12 +389,12 @@ let memberavatar = member.user.avatarURL
 let embed = new Discord.RichEmbed()
     .setColor('RANDOM')
     .setThumbnail(memberavatar)
-    .addField('🎽 | الاسم :  ',`${member}`)
+    .addField('🎽 | الاسم :  ',`&{member}`)
     .addField('📢 | لقد غادر:' , `لقد خرج منا عضو هو , ${member}:cry: `)
     .addField('🆔 | الايدي :', "**[" + `${member.id}` + "]**" )
-            .addField('➡| تبقى',`${member.guild.memberCount}`)
+            .addField('➡| تبقى',`&{member.guild.memberCount}`)
            
-              .addField("الاسم:",`<@` + `${member.id}` + `>`, true)
+              .addField("الاسم:",`<@` + `&{member.id}` + `>`, true)
                 
                                  .addField('شكرا لدخولك سيرفر', `${member.guild.name}`,true)
                                    
@@ -408,7 +408,7 @@ let embed = new Discord.RichEmbed()
 
 
 client.on("message", message => {
-        var prefix = "-";// البرفكس
+        var prefix = "&";// البرفكس
     if(message.content.startsWith(prefix + "setwlc")) {
         let args = message.mentions.channels.first();
             if(!args) message.channel.send("** منشن روم . :x:**").then(m => {    
@@ -436,12 +436,12 @@ m.delete(1500);
 });
 
 client.on("message", message => {
-        var prefix = "-";//البرفكس
+        var prefix = "&";//البرفكس
     if(message.content.startsWith(prefix + "setout")) {
         let args = message.mentions.channels.first();
             if(!args) message.channel.send("** منشن روم . :x:**");
                 if(!message.guild.member(message.author.id).hasPermission("MANAGE_CHANNELS")) return message.channel.send("**ليس لديك صلاحيات . :x:**");
-                        message.channel.send(`**${args}. لقد تم شغل الروم هذا للترحيب.**`);
+                        message.channel.send(`**&{args}. لقد تم شغل الروم هذا للترحيب.**`);
                     client.on("guildMemberRemove", (member) => {
                             if(member.user.bot) return;
                          var embed = new Discord.RichEmbed()
@@ -462,7 +462,7 @@ client.on("message", message => {
 });
 
 const config = {
-    prefix : "-",
+    prefix : "&",
     owner : [' 522866582192390174 '],
 };
 //By Request of [ function ]
